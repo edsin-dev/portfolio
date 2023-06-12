@@ -1,5 +1,5 @@
 import { DM_Sans } from "next/font/google";
-import Image from "next/image";
+import Image from "../component/Image";
 import React from "react";
 
 type Props = {};
