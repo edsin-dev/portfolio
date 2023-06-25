@@ -3,6 +3,8 @@ import Header from "./component/Header";
 import Home from "./section/Home";
 import AboutMe from "./section/AboutMe";
 import TechStack from "./section/TechStack";
+import Project from "./section/Project";
+import Contact from "./section/Contact";
 
 export default function Page() {
   return (
@@ -11,6 +13,8 @@ export default function Page() {
       <Home />
       <AboutMe />
       <TechStack />
+      <Project />
+      <Contact />
     </main>
   );
 }

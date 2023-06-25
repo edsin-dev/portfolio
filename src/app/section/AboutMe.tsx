@@ -11,8 +11,13 @@ const DM = DM_Sans({
 
 function AboutMe({}: Props) {
   return (
-    <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 border-b pb-10 border-b-[#183A58]">
-      <div className="text-3xl leading-[65px] py-3">About Me</div>
+    <div
+      id="about_me"
+      className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 border-b pb-10 border-b-[#183A58]"
+    >
+      <div className="md:text-3xl md:leading-[65px] max-sm:text-[35px] py-3">
+        About Me
+      </div>
       <div className={`${DM.className} flex items-center`}>
         <div className="flex-grow">
           <p className="py-3 text-lg ">
@@ -55,7 +60,7 @@ function AboutMe({}: Props) {
             scheduling.
           </p>
         </div>
-        <div className="max-w-[200px]">
+        <div className="md:max-w-[200px] max-sm:hidden">
           <Image src="/assets/crystal-two.png" alt="" className="max-w-lg" />
         </div>
       </div>

@@ -78,16 +78,21 @@ function TechStack({}: Props) {
     },
   ];
   return (
-    <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 border-b pb-10 border-b-[#183A58]">
-      <div className="text-3xl leading-[65px] py-3">Tech Stack</div>
+    <div
+      id="tech"
+      className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 border-b pb-10 border-b-[#183A58]"
+    >
+      <div className="max-sm:text-[35px] md:text-3xl md:leading-[65px] py-3">
+        Tech Stack
+      </div>
       <div
         className={`${DM.className} flex items-center justify-between flex-wrap gap-6`}
       >
         {/* Container */}
         {stacks.map((stack, i) => (
-          <div key={i} className="flex w-[30%]">
+          <div key={i} className="flex md:w-[30%] max-sm:w-[100%]">
             {/* Box */}
-            <div className="w-52 h-52 bg-[#183A58] rounded-[45px] flex flex-wrap p-2 justify-center items-center content-center gap-5">
+            <div className="md:w-52 md:h-52 max-sm:w-52 max-sm:h-52 max-sm:rounded-2xl bg-[#183A58] md:rounded-[45px] flex flex-wrap p-2 justify-center items-center content-center gap-5 ">
               {stack.images.map((logo) => (
                 <div
                   key={logo}

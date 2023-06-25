@@ -17,21 +17,26 @@ export default function Home({}: Props) {
     "Database Management",
   ];
   return (
-    <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 flex flex-row border-b pb-20 border-b-[#183A58]">
+    <div
+      id="home"
+      className="md:mx-auto md:max-w-7xl md:px-2 sm:px-6 lg:px-8 md:flex md:flex-row border-b md:pb-20 border-b-[#183A58] max-sm:max-h-96"
+    >
       <div className="justify-between">
         <div
-          className={`text-10xl leading-20 mix-blend-overlay relative left-[-45px] z-[-1] ${DM.className}`}
+          className={`md:text-10xl  md:leading-20 max-sm:leading-[9rem] max-sm:text-[160px] mix-blend-overlay relative md:left-[-45px] z-[-1] ${DM.className}`}
         >
           HI
         </div>
-        <div className={`text-3xl ${DM.className}`}>
+        <div
+          className={`md:text-3xl max-sm:text[24px] max-sm:pl-2  ${DM.className}`}
+        >
           My name is Edsin,
           <br />I am a full stack developer
         </div>
-        <ul className="flex mt-6">
+        <ul className="md:flex mt-6 max-sm:pl-2">
           {techs.map((tech) => (
             <li
-              className="mr-4 border-b-4 border-b-[#F6683C] max-w-min"
+              className="md:mr-4 md:border-b-4 md:border-b-[#F6683C] md:max-w-min max-sm:border-l-4 max-sm:border-l-[#F6683C] max-sm:mt-2 max-sm:pl-2"
               key={tech}
             >
               <div className="mix-blend-overlay text-base leading-[21px] py-1">
@@ -41,7 +46,7 @@ export default function Home({}: Props) {
           ))}
         </ul>
       </div>
-      <div className="flex-1 relative">
+      <div className="md:flex-1 relative max-sm:top-[-23rem] max-sm:right-[-14rem] max-sm:h-96 max-sm:w-80">
         <div className="absolute inset-0 backdrop-filter backdrop-blur"></div>
         <Image
           src="/assets/crystal-one.png"
