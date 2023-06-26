@@ -1,5 +1,7 @@
 import { DM_Sans } from "next/font/google";
 import { QRCodeSVG } from "qrcode.react";
+import Image from "../component/Image";
+import { getImage } from "@/constants/config";
 
 type Props = {};
 
@@ -21,10 +23,10 @@ function Contact({}: Props) {
           Contact <br /> Me
         </div>
         <div className="max-sm:hidden absolute md:w-[25rem] top-0 z-[1]">
-          <img src="/assets/contact-cover.png" />
+          <Image src={getImage("contact-cover.png")} />
         </div>
         <div className="max-sm:hidden absolute md:w-96  h-full top-0">
-          <img src="/assets/contact-cover-mask.png" />
+          <Image src={getImage("contact-cover-mask.png")} />
         </div>
       </div>
       <div className="text-white md:text-[21px] max-sm:text-[14px] self-center flex-1 max-sm:pl-2 max-sm:pt-2">

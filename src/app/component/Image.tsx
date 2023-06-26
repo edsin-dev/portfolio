@@ -1,11 +1,11 @@
 import React from "react";
-
-interface Props
-  extends React.DetailedHTMLProps<
-    React.ImgHTMLAttributes<HTMLImageElement>,
-    HTMLImageElement
-  > {}
+import NextImage, { ImageProps } from "next/image";
+interface Props {
+  src: any;
+  alt?: string;
+  className?: string;
+}
 
 export default function Image(props: Props) {
-  return <img {...props} />;
+  return <NextImage {...props} alt={"image"} />;
 }

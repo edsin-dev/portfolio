@@ -1,6 +1,7 @@
 import { DM_Sans } from "next/font/google";
 import Image from "../component/Image";
 import React from "react";
+import { getImage } from "@/constants/config";
 
 type Props = {};
 
@@ -61,7 +62,7 @@ function AboutMe({}: Props) {
           </p>
         </div>
         <div className="md:max-w-[200px] max-sm:hidden">
-          <Image src="/assets/crystal-two.png" alt="" className="max-w-lg" />
+          <Image src={getImage("crystal-two.png")} alt="" className="max-w-lg" />
         </div>
       </div>
     </div>

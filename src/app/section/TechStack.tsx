@@ -1,6 +1,7 @@
 import { DM_Sans } from "next/font/google";
 import Image from "../component/Image";
 import React from "react";
+import { getImage } from "@/constants/config";
 
 type Props = {};
 
@@ -13,32 +14,17 @@ function TechStack({}: Props) {
   const stacks = [
     {
       category: "Frontend",
-      images: [
-        "/assets/html.png",
-        "/assets/css.png",
-        "/assets/typescript.png",
-        "/assets/reactjs.png",
-      ],
+      images: ["html.png", "css.png", "typescript.png", "reactjs.png"],
       title: ["HTML 5", "CSS 3", "TypeScript", "ReactJs"],
     },
     {
       category: "Backend",
-      images: [
-        "/assets/java-icon.png",
-        "/assets/spring-boot.png",
-        "/assets/nodejs.png",
-        "/assets/express.png",
-      ],
+      images: ["java-icon.png", "spring-boot.png", "nodejs.png", "express.png"],
       title: ["Java", "Spring boot", "Spring Security", "Nodejs", "ExpressJs"],
     },
     {
       category: "Mobile App",
-      images: [
-        "/assets/expo.png",
-        "/assets/android-ios.png",
-        "/assets/appstore.png",
-        "/assets/playstore.png",
-      ],
+      images: ["expo.png", "android-ios.png", "appstore.png", "playstore.png"],
       title: [
         "Expo",
         "React Native CLI",
@@ -50,30 +36,20 @@ function TechStack({}: Props) {
     {
       category: "Databases",
       images: [
-        "/assets/mongo.jpeg",
-        "/assets/mysql.png",
-        "/assets/postgres.png",
-        "/assets/firebase-realtm.png",
+        "mongo.jpeg",
+        "mysql.png",
+        "postgres.png",
+        "firebase-realtm.png",
       ],
       title: ["Mongo", "MySql", "Postgres", "Firebase Realtime"],
     },
     {
       category: "Deployment",
-      images: [
-        "/assets/docker.png",
-        "/assets/nginx.webp",
-        "/assets/cpanel.png",
-        "/assets/aws-ec2.png",
-      ],
+      images: ["docker.png", "nginx.webp", "cpanel.png", "aws-ec2.png"],
       title: ["Docker", "NGINX", "CPanel", "AWS EC2", "Azure EC2"],
     },
     {
-      images: [
-        "/assets/redis.png",
-        "/assets/openai.png",
-        "/assets/firebase.png",
-        "/assets/google-map.png",
-      ],
+      images: ["redis.png", "openai.png", "firebase.png", "google-map.png"],
       title: ["Redis", "OpenAI API", "Firebase", "Google Map API", "Vision AI"],
     },
   ];
@@ -98,7 +74,11 @@ function TechStack({}: Props) {
                   key={logo}
                   className="w-16 h-16 flex items-center justify-center bg-white p-3 rounded-xl m-0"
                 >
-                  <Image src={logo} alt="" className="w-full h-full" />
+                  <Image
+                    src={getImage(logo)}
+                    alt=""
+                    className="w-full h-full"
+                  />
                 </div>
               ))}
             </div>

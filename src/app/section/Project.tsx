@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "../component/Image";
+import { getImage } from "@/constants/config";
 
 function Project() {
   return (
@@ -13,13 +15,13 @@ function Project() {
         <div className="text-red-500 text-[20px] font-normal">Web</div>
         <div className="flex justify-between gap-6 mt-2">
           <div className="rounded-lg overflow-hidden">
-            <img className="" src="/assets/project1.png" />
+            <Image className="" src={getImage("project1.png")} />
           </div>
           <div className="rounded-lg overflow-hidden">
-            <img className="" src="/assets/project2.png" />
+            <Image className="" src={getImage("project2.png")} />
           </div>
           <div className="rounded-lg overflow-hidden">
-            <img className="" src="/assets/project3.png" />
+            <Image className="" src={getImage("project3.png")} />
           </div>
         </div>
       </div>
@@ -27,16 +29,16 @@ function Project() {
         <div className="text-red-500 text-[20px] font-normal">Mobile</div>
         <div className="flex justify-between gap-6 mt-2">
           <div className="rounded-lg overflow-hidden w-1/4 h-full">
-            <img className="w-full h-full" src="/assets/mobile1.jpg" />
+            <Image className="w-full h-full" src={getImage("mobile1.jpg")} />
           </div>
           <div className="rounded-lg overflow-hidden w-1/4 h-full">
-            <img className="w-full h-full" src="/assets/mobile2.jpg" />
+            <Image className="w-full h-full" src={getImage("mobile2.jpg")} />
           </div>
           <div className="rounded-lg overflow-hidden w-1/4 h-full">
-            <img className="w-full h-full" src="/assets/mobile3.jpg" />
+            <Image className="w-full h-full" src={getImage("mobile3.jpg")} />
           </div>
           <div className="rounded-lg overflow-hidden w-1/4 h-full">
-            <img className="w-full h-full" src="/assets/mobile4.jpg" />
+            <Image className="w-full h-full" src={getImage("mobile4.jpg")} />
           </div>
         </div>
       </div>

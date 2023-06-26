@@ -40,9 +40,7 @@ module.exports = {
       10: "2.5rem",
       20: "26.85rem",
     },
-    backgroundImage: {
-      "crystal-bg": "url('/assets/crystal-one.png')",
-    },
+    backgroundImage: {},
   },
   plugins: [],
 };

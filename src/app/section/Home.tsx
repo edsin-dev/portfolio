@@ -1,6 +1,7 @@
 import { DM_Sans } from "next/font/google";
 import Image from "../component/Image";
 import React from "react";
+import { getImage } from "@/constants/config";
 
 type Props = {};
 
@@ -49,7 +50,7 @@ export default function Home({}: Props) {
       <div className="md:flex-1 relative max-sm:top-[-23rem] max-sm:right-[-14rem] max-sm:h-96 max-sm:w-80">
         <div className="absolute inset-0 backdrop-filter backdrop-blur"></div>
         <Image
-          src="/assets/crystal-one.png"
+          src={getImage("crystal-one-min.webp")}
           alt=""
           className="z-[1] scale-[1.9] relative"
         />
